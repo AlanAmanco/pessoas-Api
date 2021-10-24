@@ -1,4 +1,4 @@
-package com.github.alanamanco.citiesapi.staties;
+package com.github.alanamanco.citiesapi.states;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

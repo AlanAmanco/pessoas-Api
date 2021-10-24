@@ -1,4 +1,4 @@
-package com.github.alanamanco.citiesapi.staties;
+package com.github.alanamanco.citiesapi.states;
 
 import com.github.alanamanco.citiesapi.countries.Country;
 import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
@@ -32,11 +32,6 @@ class State {
 
     private Integer ibge;
 
-     // 1st
-     /*@Column(name = "pais")
-     private Integer countryId;*/
-
-    // 2nd - @ManyToOne
     @ManyToOne
     @JoinColumn(name = "pais", referencedColumnName = "id")
     private Country country;
@@ -73,7 +68,4 @@ class State {
         return country;
     }
 
-  /*public Integer getCountryId() {
-      return countryId;
-  }*/
 }
