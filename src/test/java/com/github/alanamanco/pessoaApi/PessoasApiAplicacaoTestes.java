@@ -1,10 +1,10 @@
-package com.github.alanamanco.citiesapi;
+package com.github.alanamanco.pessoaApi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CitiesApiApplicationTests {
+class PessoasApiAplicacaoTestes {
 
 	@Test
 	void contextLoads() {

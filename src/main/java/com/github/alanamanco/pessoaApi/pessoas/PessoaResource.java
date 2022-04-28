@@ -1,4 +1,4 @@
-package com.github.alanamanco.citiesapi.cities;
+package com.github.alanamanco.pessoaApi.pessoas;
 
 
 import org.springframework.data.domain.Page;
@@ -8,18 +8,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("cities")
-public class CityResource {
+@RequestMapping("pessoa")
+public class PessoaResource {
 
-    private final CityRepository repository;
+    private final PessoaRepository repository;
 
-    public CityResource(final CityRepository repository) {
+    public PessoaResource(final PessoaRepository repository) {
         this.repository = repository;
     }
 
     // 2nd - Pageable
     @GetMapping
-    public Page<City> cities(final Pageable page) {
+    public Page<Pessoa> pessoas(final Pageable page) {
         return repository.findAll(page);
     }
 
